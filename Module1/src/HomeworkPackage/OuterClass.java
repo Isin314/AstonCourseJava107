@@ -28,7 +28,7 @@ public final class OuterClass {
 		
 		OuterClass outerClass = (OuterClass) o;
 		return outerClass.getIntData() == intData 
-				&& outerClass.getAssociatedClass().getData().equals(associatedСlass.getData());
+				&& outerClass.associatedСlass.getData().equals(associatedСlass.getData());
 		
 	}
 	

@@ -7,13 +7,13 @@ public class Program {
 		АssociatedСlass associatedClass = new АssociatedСlass("constructor text");
 		OuterClass outerClass = new OuterClass(0, associatedClass);
 		
-		associatedClass.setData("after create outerClass");
+		associatedClass.setData("text after create outerClass");
 		
 		System.out.printf("intData: %d, associatedClass: %s.\n",
 				outerClass.getIntData(),
 				outerClass.getAssociatedClass().getData());
 		
-		outerClass.getAssociatedClass().setData("changed text");
+		outerClass.getAssociatedClass().setData("changed text inside class");
 		
 		System.out.printf("After changing. intData: %d, associatedClass: %s.\n",
 				outerClass.getIntData(),
