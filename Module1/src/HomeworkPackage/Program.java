@@ -7,6 +7,8 @@ public class Program {
 		АssociatedСlass associatedClass = new АssociatedСlass("constructor text");
 		OuterClass outerClass = new OuterClass(0, associatedClass);
 		
+		associatedClass.setData("after create outerClass");
+		
 		System.out.printf("intData: %d, associatedClass: %s.\n",
 				outerClass.getIntData(),
 				outerClass.getAssociatedClass().getData());
